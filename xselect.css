@@ -1,0 +1,56 @@
+/*========xselect==========*/
+.xselect-elem {
+    width: 90px;
+    padding: 0 12px;
+    /*font-size: 16px;*/
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    /*border: 1px solid #e1e1e1;*/
+    /*border-radius: 2px;*/
+}
+.xselect-cur {
+    width: 100%;
+    height: 100%;
+    /*font-size: 16px;*/
+    /*display: table-cell;*/
+    cursor: pointer;
+}
+.xselect-cur > .caret {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    top: 48%;
+    right: 15px;
+    /*margin-right: 5px;*/
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.xselect-options {
+    display: none;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    margin: 0;
+    padding: 5px 0;
+    list-style: none;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.175);
+}
+.xselect-options.open {
+    display: block;
+}
+.xselect-options > li {
+    padding: 4px 12px;
+    cursor: pointer;
+    line-height: 1.4;
+}
+.xselect-options > li:hover {
+    background: #f5f5f5;
+}
